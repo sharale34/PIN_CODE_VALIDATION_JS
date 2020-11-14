@@ -3,7 +3,7 @@
 // Create a regex pattern to validate PIN code 400088
 function is_PINCode(str)
 {
- regexp = /^[1-9][0-9]{5}/;
+ regexp = /^[1-9][0-9]{5}$/;
   
         if (regexp.test(str))
           {
@@ -14,4 +14,4 @@ function is_PINCode(str)
             return false;
           }
 }
-console.log("Is given PIN Code Valid - ",is_PINCode("A400088"));
+console.log("Is given PIN Code Valid - ",is_PINCode("400088B"));
