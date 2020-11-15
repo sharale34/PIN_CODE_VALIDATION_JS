@@ -18,7 +18,7 @@
 //Validate Email address with a regex.
 {
     function isValidEmailAddress(Str) {
-        regexp = /^[a-zA-Z0-9-]+(.[_A-Za-z0-9-+.]+)+@[a-zA-Z0-9]+(.[A-Za-z0-9]+)$/;
+        regexp = /^[a-zA-Z0-9-]+(.[_A-Za-z0-9-+.]+)+@[a-zA-Z0-9]+(.[A-Za-z0-9]+)+.[a-z]{2,4}$/;
 
         if (regexp.test(Str)) {
             return true;
@@ -27,5 +27,5 @@
             return false;
         }
     }
-    console.log("Is given Email Address Valid - ", isValidEmailAddress("abc.xyz@bridgelabz.com"));
+    console.log("Is given Email Address Valid - ", isValidEmailAddress("abc.xyz@bridgelabz.co.in"));
 }
